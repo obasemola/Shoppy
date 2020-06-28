@@ -3,6 +3,8 @@ const parsingHelp = require('body-parser');
 
 const app = express();
 
+app.use(parsingHelp.urlencoded({ extended: true }));
+
 app.get('/', (req, res) => {
   res.send(
     `
@@ -37,7 +39,7 @@ app.get('/', (req, res) => {
 //   }
 // };
 
-app.post('/', parsingHelp.urlencoded({ extended: true }), (req, res) => {
+app.post('/', (req, res) => {
   console.log(req.body);
   res.send('Account created!')
 });
