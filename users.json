@@ -16,5 +16,10 @@
     "email": "testya@test.com",
     "password": "somborry",
     "id": "18b97307"
+  },
+  {
+    "email": "testb@test.com",
+    "password": "password",
+    "id": "63c89da5"
   }
 ]
