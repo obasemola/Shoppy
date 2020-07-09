@@ -5,6 +5,7 @@ const authRouter = require('./routes/Admin/auth');
 
 const app = express();
 
+app.use(express.static('public'));
 app.use(parsingHelp.urlencoded({ extended: true }));
 app.use(cookieSession({
   keys: ['jghbkjdbghjkjnjgxxdxhlkhbjhbhmb']
